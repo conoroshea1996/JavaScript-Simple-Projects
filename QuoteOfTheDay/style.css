@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: paleturquoise;
+    color: rgb(70, 66, 66);
+}
+.container{
+    text-align: center;
+    padding: 2.2rem;
+    background: whitesmoke;
+    border-radius:10px;
+    flex: 0 0 75%;
+    border-top: solid silver 2px;
+    border-bottom: solid silver 3px;
+
+}
+
+.btn{
+    background: paleturquoise;
+    color: rgb(70, 66, 66);
+    text-transform: capitalize;
+    font-weight: bold;
+    border:solid 1px grey;
+    border-radius: 40px;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background: rgb(93, 230, 230);
+}
+blockquote{
+    background: snow;
+    border-left: 0.8rem solid paleturquoise;
+    border-right: 0.8rem solid paleturquoise;
+    padding: 6px;
+}
+.quoteAuthor{
+    color: palevioletred;
+    text-transform: capitalize;
+}
