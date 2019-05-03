@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60) center/cover no-repeat;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+.container{
+    flex: 0 0 70%;
+    text-align: center;
+    border: 8px solid rgb(70, 67, 67);
+    padding: 2rem;
+    font-weight: bold;
+    box-shadow:  5px 5px 10px 10px rgb(9, 9, 94);
+}
+.counter{
+    font-size: 5rem;
+}
+.btn{
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    text-transform: capitalize;
+    border: solid 3px darkblue;
+    box-shadow:  2px 2px 6px 6px rgb(9, 9, 94);
+    outline: none;
+    transition: all 1s ease;
+}
+.btn:hover{
+    background: white;
+}
+.btn:active{
+    transform: translateY(-2px);
+}
