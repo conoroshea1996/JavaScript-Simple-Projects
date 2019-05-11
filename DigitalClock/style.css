@@ -1,0 +1,15 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+}
+.clock{
+    font-size: 6rem;
+    color: lawngreen;
+    padding: 20px;
+    background: darkblue;
+    border: rgb(12, 121, 79) 5px double;
+    border-radius: 40px;
+}
