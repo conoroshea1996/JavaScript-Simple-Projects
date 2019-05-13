@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulb</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            height: 100px;
+        }
+        .container{
+            text-align: center;
+        }
+        .btn{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+ <div>
+     <div class="container">
+    <img  src="./img/off.jpg" alt="" id="bulb">
+    <div class="btn">
+    <button onclick="light(1)">Turn on</button>
+    <button onclick="light(0)">Turn Off</button>
+    </div>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>
