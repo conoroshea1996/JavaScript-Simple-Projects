@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: salmon;
+    padding:0;
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'heading heading'
+    'form tabel';
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.head{
+    grid-area: heading;
+    background: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form{
+    grid-area: form;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    height: 80%;
+    border:solid red 2px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.form-group h4{
+    text-align: center;
+}
+.form-details{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-row p{
+    margin:0;
+    padding-left: 10px;
+}
+.form-row input{
+    width: 80%;
+    padding-left: 10px;
+}
+.form-row select{
+    width: 80%;
+    padding: 2px;
+}
+.btn{
+    justify-content: center;
+    display: flex;
+}
+.btn button{
+    padding: 5px;
+    border:solid 2px silver;
+    border-radius: 10px;
+}
+
+#students {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  #students td, #students th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #students tr{
+      text-align: center;
+      font-weight: bold;
+  }
+  #students tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #students tr:hover {background-color: #ddd;}
+  
+  #students th {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .tabel{
+      background: silver;
+      display: flex;
+      justify-content: center;
+  }
+
+
