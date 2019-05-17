@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #6fc6eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    width: 50%;
+    height:80%;
+    background: white;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+}
+.header{
+    height: 30%;
+    background: url(/img/background.jpg);
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.clear{
+    position: absolute;
+    top: 20px;
+    right: 23px;
+}
+.clear i{
+    font-size: 1.4rem;
+}
+
+#date{
+    position: absolute;
+    bottom: 10px;
+    left:50px;
+    font-size: 1.2rem;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom:solid silver 3px;
+}
+.item-des{
+    display: flex;
+}
+.item-des i{
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+
+.add-item{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    border-top: red 3px solid;
+}
+.add-item input{
+    flex: 6;
+}
+.fa-trash{
+    font-size: 1.6rem;
+}
+.fa-circle{
+    font-size: 1.6rem;
+}
+.fa-check-circle{
+    color: rgb(16, 206, 16);
+    font-size: 1.6rem;
+}
+.fa-plus-circle{
+    font-size: 1.6rem;
+    padding-right: 20px;
+}
+.text{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.opcatiy{
+    opacity: 0.3;
+    color: slategrey;
+    text-decoration: line-through;
+}
+
+#list{
+     position: relative;
+     overflow: hidden;
+     overflow-y: scroll;
+     max-height: 400px;
+}
+
+
+#list::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+#list::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#list::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
