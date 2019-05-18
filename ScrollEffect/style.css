@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100vw;
+    background: url(/img/rename.jpg);
+    background-size: 100% 100%;
+}
+
+.section h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+}
+.col-1{
+    height: 100%;
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.col-1 p,h3{
+    text-align: center;
+}
+.col-2{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.col-2 img{
+    height: 60%;
+    width: 100%;
+}
+
+.text{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+.text-appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img{
+    transform: translateX(100%);
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.slideIn{
+    transform: translateX(0);
+    opacity: 1;
+    border: lightcyan 1px solid;
+}
