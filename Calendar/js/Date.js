@@ -1,7 +1,8 @@
 const month = document.querySelector('.Month');
 const date = document.querySelector('.Date');
-
 const img = document.querySelector('.img');
+const today= document.querySelector('.today');
+
 
 
 const monthList =["January", "February", "March", "April", "May", "June","July","August","September","October","November","December"];
@@ -18,6 +19,7 @@ const dateNow  = DateNow.getDate();
 month.innerHTML = ` ${monthList[MonthNow]} , ${YearNow}`;
 date.innerHTML = ` ${dateNow} , ${days[dayNow]}`
 
+today.innerHTML = days[dayNow];
     
     img.style.backgroundImage = ` url(/imgs/img${MonthNow}.jpg)`;
 
@@ -34,9 +36,6 @@ function getDaysInMonth(month, year) {
        date.setDate(date.getDate() + 1);
     }
   
-    console.log(days);
-    
-
 for(var x=1; x<days.length; x++){
     const div = document.createElement('div');
     div.className = 'number'
@@ -48,12 +47,5 @@ for(var x=1; x<days.length; x++){
     }
 }
 }
-
-
-
-
-
-
-
 
 getDaysInMonth(MonthNow,YearNow);
